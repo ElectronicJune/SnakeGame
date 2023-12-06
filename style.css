@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+}
+
+#gameScreen {
+    border: 2px solid black;
+    background-color: white;
+}
+
+#gameover {
+    position: fixed;
+    visibility: hidden;
+    font-size: 70px;
+    background-color: rgba(128, 128, 128, 0.821);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+}
+
+#score, #highscore, #boardSize {
+    display: inline-block;
+    font-size: 30px;
+    padding-right: 30px;
+}
+
+#gameBar {
+    text-align: left;
+}
+
+#game {
+    display: inline-block;
+}
+
+#restart {
+    font-size: 20px;
+    padding: 10px;
+}
