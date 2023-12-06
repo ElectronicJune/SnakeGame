@@ -14,7 +14,6 @@ const foodColor = "red";
 boardSize.textContent = "Size: " + units;
 let highscore = 0;
 let score = 0;
-//units - [0, 25(exclusive)]
 let directionX = 1;
 let directionY = 0;
 let foodX = Math.floor(units / 2);
@@ -56,13 +55,11 @@ function render(){
 function renderFood(){
     ctx.fillStyle = foodColor;
     ctx.fillRect(foodX * unitSize, foodY * unitSize, unitSize, unitSize);
-    ctx.strokeRect(foodX * unitSize, foodY * unitSize, unitSize, unitSize);
 }
 function renderSnake(){
     ctx.fillStyle = snakeColor;
     for (part of snake){
         ctx.fillRect(part.x * unitSize, part.y * unitSize, unitSize, unitSize);
-        ctx.strokeRect(part.x * unitSize, part.y * unitSize, unitSize, unitSize);
     }
 }
 function updateSnake(){
