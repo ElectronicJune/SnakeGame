@@ -6,7 +6,10 @@ const highscoreElement = document.getElementById("highscore");
 const restartButton = document.getElementById("restart");
 const boardSize = document.getElementById("boardSize");
 
-const units = prompt("Enter Board Size:");
+let units;
+do {
+    units = Number(prompt("Enter Board Size:"));
+}while (isNaN(units));
 const unitSize = gameScreen.width / units; //px
 const snakeColor = "green";
 const foodColor = "red";
